@@ -136,13 +136,16 @@ public class YouTubeStandaloneModule extends ReactContextBaseJavaModule {
 
         try {
             if (intent != null) {
-                if (canResolveIntent(intent)) {
+                YouTubeInitializationResult.SERVICE_MISSING
+                        .getErrorDialog(currentActivity, REQ_RESOLVE_SERVICE_MISSING).show();
+
+                /*if (canResolveIntent(intent)) {
                     currentActivity.startActivityForResult(intent, REQ_START_STANDALONE_PLAYER);
                 } else {
                     // Could not resolve the intent - must need to install or update the YouTube API service.
                     YouTubeInitializationResult.SERVICE_MISSING
                         .getErrorDialog(currentActivity, REQ_RESOLVE_SERVICE_MISSING).show();
-                }
+                }*/
             }
         } catch (Exception e) {
             mPickerPromise.reject(E_FAILED_TO_SHOW_PLAYER, e);
