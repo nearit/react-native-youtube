@@ -1,4 +1,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.inprogress.reactnativeyoutube">
 
+    <application>
+        <activity android:name=".NITYoutubeStandAlonePlayer"/>
+    </application>
+    
 </manifest>
