@@ -4,5 +4,5 @@
     <application>
         <activity android:name=".NITYoutubeStandAlonePlayer"/>
     </application>
-    
+
 </manifest>
