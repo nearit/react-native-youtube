@@ -80,8 +80,10 @@ public class YouTubeStandaloneModule extends ReactContextBaseJavaModule {
             return;
         }
 
-        final Intent intent = YouTubeStandalonePlayer.createVideoIntent(
-                    currentActivity, apiKey, videoId, startTimeMillis, autoplay, lightboxMode);
+/*        final Intent intent = YouTubeStandalonePlayer.createVideoIntent(
+                    currentActivity, apiKey, videoId, startTimeMillis, autoplay, lightboxMode);*/
+        final Intent intent = NITYoutubeStandAlonePlayer.createVideoIntent(
+                currentActivity, apiKey, videoId);
 
         play(intent, promise);
     }
