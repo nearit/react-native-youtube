@@ -136,8 +136,7 @@ public class YouTubeStandaloneModule extends ReactContextBaseJavaModule {
 
         try {
             if (intent != null) {
-                YouTubeInitializationResult.SERVICE_MISSING
-                        .getErrorDialog(currentActivity, REQ_RESOLVE_SERVICE_MISSING).show();
+                currentActivity.startActivity(intent);
 
                 /*if (canResolveIntent(intent)) {
                     currentActivity.startActivityForResult(intent, REQ_START_STANDALONE_PLAYER);
