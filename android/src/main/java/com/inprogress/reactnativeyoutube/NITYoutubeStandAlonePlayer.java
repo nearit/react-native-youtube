@@ -58,7 +58,7 @@ public class NITYoutubeStandAlonePlayer extends YouTubeBaseActivity implements Y
 
             @Override
             public void onVideoEnded() {
-
+                finish();
             }
 
             @Override
@@ -90,7 +90,7 @@ public class NITYoutubeStandAlonePlayer extends YouTubeBaseActivity implements Y
 
                 @Override
                 public void onStopped() {
-                    finish();
+
                 }
 
                 @Override
