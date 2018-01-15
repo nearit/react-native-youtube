@@ -2,7 +2,9 @@
     package="com.inprogress.reactnativeyoutube">
 
     <application>
-        <activity android:name=".NITYoutubeStandAlonePlayer"/>
+        <activity
+            android:name=".NITYoutubeStandAlonePlayer"
+            android:screenOrientation="portrait"/>
     </application>
 
 </manifest>
